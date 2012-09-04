@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE node SYSTEM "dbus.dtd">
+<node>
+
+  <interface name="rtcomeventlogger.events.EventsList">
+    <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="RTCOMELAsyncFactory"/>
+
+    <method name="getEvent">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_EventsList_getEvent"/>
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <arg name="id" type="u" direction="in"/>
+      <arg name="intcols" type="s" direction="in"/>
+      <arg name="strcols" type="s" direction="in"/>
+      <arg name="intvals" type="ai" direction="out"/>
+      <arg name="strvals" type="as" direction="out"/>
+    </method>
+
+    <method name="getEventList">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_EventsList_getEventList"/>
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <arg name="query" type="s" direction="in"/>
+      <arg name="intcols" type="s" direction="in"/>
+      <arg name="strcols" type="s" direction="in"/>
+      <arg name="offset" type="u" direction="in"/>
+      <arg name="limit" type="i" direction="in"/>
+      <arg name="intvals" type="aai" direction="out"/>
+      <arg name="strvals" type="aas" direction="out"/>
+    </method>
+
+    <method name="getEventListCount">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_EventsList_getEventListCount"/>
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <arg name="query" type="s" direction="in"/>
+      <arg name="offset" type="u" direction="in"/>
+      <arg name="limit" type="i" direction="in"/>
+      <arg name="count" type="u" direction="out"/>
+    </method>
+
+  </interface>
+</node>

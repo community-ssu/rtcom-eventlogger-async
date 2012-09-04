@@ -1,0 +1,7 @@
+rtcom-eventlogger-async (0.1-0maemo0+0cssu0) unstable; urgency=low
+
+  * Initial Release
+  * Support to retrive event by id or query
+  * Support to retrive count of events by query
+
+ -- Ludek Finstrle <luf@pzkagis.cz>  Fri, 27 Jul 2012 10:18:11 +0200

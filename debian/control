@@ -1,0 +1,38 @@
+Source: rtcom-eventlogger-async
+Priority: extra
+Maintainer: Ludek Finstrle <luf@pzkagis.cz>
+Build-Depends: cdbs, debhelper (>= 5), autotools-dev, libglib2.0-dev, librtcom-eventlogger-dev, libdbus-1-dev, libdbus-glib-1-dev, check, dbus
+Standards-Version: 3.7.2
+Section: libs
+
+Package: rtcom-eventlogger-async
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, librtcom-eventlogger1 (>= 1.4)
+Description: DBus async factory for rtcom-eventlogger
+  DBus async factory for Event Logger Library.
+
+Package: librtcom-eventlogger1-async
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: DBus library to access rtcom-eventlogger-async factory
+  DBus client library to access factory for Event Logger Async Library.
+
+Package: librtcom-eventlogger1-async-dbg
+Section: libdevel
+Architecture: any
+Depends: librtcom-eventlogger1-async (= ${Source-Version})
+Description: DBus library to access rtcom-eventlogger-async factory. Debug symbols
+  DBus client library to access factory for Event Logger Async Library.
+  .
+  Debug symbols
+
+Package: librtcom-eventlogger-async-dev
+Section: libdevel
+Architecture: any
+Depends: librtcom-eventlogger1-async (= ${Source-Version}), libdbus-1-dev
+Description: DBus library to access rtcom-eventlogger-async factory. Development files
+  DBus client library to access factory for Event Logger Async Library.
+  .
+  Development files.
+

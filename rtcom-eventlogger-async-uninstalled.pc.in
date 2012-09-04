@@ -1,0 +1,9 @@
+abs_top_builddir=@abs_top_builddir@
+abs_top_srcdir=@abs_top_srcdir@
+
+Name: librtcom-eventlogger-async
+Description: DBus async factory for rtcom-eventlogger
+Requires: glib-2.0 >= 2.6.4 gobject-2.0 >= 2.6.4 gmodule-2.0 >= 2.6.4 rtcom-eventlogger >= 1.4
+Version: @VERSION@
+Libs: ${abs_top_builddir}/src/librtcom-eventlogger-async.la
+Cflags: -I${abs_top_srcdir}

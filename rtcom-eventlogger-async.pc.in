@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: librtcom-eventlogger-async
+Description: DBus async factory for rtcom-eventlogger
+Requires: glib-2.0 >= 2.6.4 gobject-2.0 >= 2.6.4 gmodule-2.0 >= 2.6.4 rtcom-eventlogger >= 1.4
+Version: @VERSION@
+Libs: -L${libdir} -lrtcom-eventlogger-async
+Cflags: -I${includedir}
