@@ -5,16 +5,24 @@ Build-Depends: cdbs, debhelper (>= 5), autotools-dev, libglib2.0-dev, librtcom-e
 Standards-Version: 3.7.2
 Section: libs
 
+Package: rtcom-eventlogger-async-dbg
+Architecture: any
+Depends: rtcom-eventlogger-async (= ${Source-Version})
+Description: DBus async factory for rtcom-eventlogger
+  DBus async factory for Event Logger Library.
+
 Package: rtcom-eventlogger-async
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, librtcom-eventlogger1 (>= 1.4)
-Description: DBus async factory for rtcom-eventlogger
+Description: DBus async factory for rtcom-eventlogger. Debug symbols
   DBus async factory for Event Logger Library.
+  .
+  Debug symbols
 
 Package: librtcom-eventlogger1-async
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, rtcom-eventlogger-async
 Description: DBus library to access rtcom-eventlogger-async factory
   DBus client library to access factory for Event Logger Async Library.
 

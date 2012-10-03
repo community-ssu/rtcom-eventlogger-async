@@ -1,3 +1,10 @@
+rtcom-eventlogger-async (0.1-0maemo1+0cssu0) unstable; urgency=low
+
+  * Fixed dependency
+  * Add -dbg package also for rtcom-eventlogger-async
+
+ -- Ludek Finstrle <luf@pzkagis.cz>  Wed, 03 Oct 2012 9:11:03 +0200
+
 rtcom-eventlogger-async (0.1-0maemo0+0cssu0) unstable; urgency=low
 
   * Initial Release

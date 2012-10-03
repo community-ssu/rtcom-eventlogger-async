@@ -9,7 +9,7 @@ include /usr/share/cdbs/1/rules/simple-patchsys.mk
 DEB_DH_INSTALL_SOURCEDIR=debian/tmp
 DEB_DESTDIR=$(CURDIR)/debian/tmp
 
-DEB_DH_STRIP_ARGS=--dbg-package=librtcom-eventlogger1-async
+DEB_DH_STRIP_ARGS=--dbg-package=librtcom-eventlogger1-async --dbg-package=rtcom-eventlogger-async
 
 ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
 	DEB_CONFIGURE_EXTRA_FLAGS+=--enable-debug
