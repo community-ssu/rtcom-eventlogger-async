@@ -13,7 +13,7 @@ Description: DBus async factory for rtcom-eventlogger
 
 Package: rtcom-eventlogger-async
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, librtcom-eventlogger1 (>= 1.4)
+Depends: ${shlibs:Depends}, ${misc:Depends}, librtcom-eventlogger1 (>= 1.4), kernel-feature-errata-430973-workaround[armel]
 Description: DBus async factory for rtcom-eventlogger. Debug symbols
   DBus async factory for Event Logger Library.
   .
@@ -22,7 +22,7 @@ Description: DBus async factory for rtcom-eventlogger. Debug symbols
 Package: librtcom-eventlogger1-async
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, rtcom-eventlogger-async
+Depends: ${shlibs:Depends}, ${misc:Depends}, rtcom-eventlogger-async, kernel-feature-errata-430973-workaround[armel]
 Description: DBus library to access rtcom-eventlogger-async factory
   DBus client library to access factory for Event Logger Async Library.
 

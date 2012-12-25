@@ -1,3 +1,9 @@
+rtcom-eventlogger-async (0.1-0maemo1+0cssu0+thumb0) unstable; urgency=low
+
+  * Thumb2 compile
+
+ -- Ivaylo Dimitrov <freemangordon@abv.bg>  Tue, 25 Dec 2012 13:24:27 +0200
+
 rtcom-eventlogger-async (0.1-0maemo1+0cssu0) unstable; urgency=low
 
   * Fixed dependency
